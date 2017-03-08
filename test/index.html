@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstra4 Classes for BS3 Test</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+</head>
+<body>
+  <div class="page-header">
+    <p>This ugly steaming pile is a test page! Visit the <a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a> for the real deets.</p>
+  </div>
+
+  <article class="d-flex my-3">
+    <div class="add-border border-0 p-2">.border-0</div>
+    <div class="add-border border-top-0 ml-2 p-2">.border-top-0</div>
+    <div class="add-border border-right-0 ml-2 p-2">.border-right-0</div>
+    <div class="add-border border-bottom-0 ml-2 p-2">.border-bottom-0</div>
+    <div class="add-border border-left-0 ml-2 p-2">.border-left-0</div>
+    <div class="add-border rounded ml-2 p-2">.rounded</div>
+    <div class="add-border rounded-top ml-2 p-2">.rounded-top</div>
+    <div class="add-border rounded-right ml-2 p-2">.rounded-right</div>
+    <div class="add-border rounded-bottom ml-2 p-2">.rounded-bottom</div>
+    <div class="add-border rounded-left ml-2 p-2">.rounded-left</div>
+    <div class="add-border rounded-0 ml-2 p-2">.rounded-0</div>
+  </article>
+
+  <article class="d-flex my-3">
+    <div class="text-muted p-2">.text-muted</div>
+    <div class="text-primary p-2">.text-primary</div>
+    <div class="text-success p-2">.text-success</div>
+    <div class="text-info p-2">.text-info</div>
+    <div class="text-warning p-2">.text-warning</div>
+    <div class="text-danger p-2">.text-danger</div>
+    <div class="bg-primary text-white p-2">.text-white</div>
+    <div class="text-gray-dark p-2">.text-gray-dark</div>
+  </article>
+
+  <article class="d-flex my-3">
+    <div class="bg-primary p-2">.bg-primary</div>
+    <div class="bg-success p-2">.bg-success</div>
+    <div class="bg-info p-2">.bg-info</div>
+    <div class="bg-warning p-2">.bg-warning</div>
+    <div class="bg-danger p-2">.bg-danger</div>
+    <div class="bg-faded p-2">.bg-faded</div>
+  </article>
+
+  <article class="my-3">
+    <span class="d-block bg-primary p-2">.d-block</span>
+    <div class="d-inline bg-primary p-2">.d-inline</div>
+    <span class="d-inline-block bg-primary p-2">.d-inline-block</span>
+    <!-- //TODO d-table, d-table-cell, d-flex, d-inline-flex-->
+    <div class="d-none bg-primary p-2">This should be invisible</div>
+  </article>
+
+  <!-- //TODO .fixed-top, .fixed-bottom, .sticky-top -->
+
+  <article class="clearfix my-3">
+    <div class="float-left bg-primary p-2">.float-left</div>
+    <div class="float-right bg-primary p-2">.float-right</div>
+    <div class="float-right float-none p-2">.float-none</div>
+  </article>
+
+  <article class="my-3">
+    <div class="w-25 bg-success p-2 ">.w-25</div>
+    <div class="w-50 bg-info p-2">.w-50</div>
+    <div class="w-75 bg-success p-2">.w-75</div>
+    <div class="w-100 bg-info p-2">.w-100</div>
+    <div class="make-too-wide mw-100 bg-success p-2">.mw-100</div>
+  </article>
+
+  <article class="make-fixed-height add-border d-flex my-3">
+    <div class="h-25 bg-success p-2">.h-25</div>
+    <div class="h-50 bg-info p-2">.h-50</div>
+    <div class="h-75 bg-success p-2">.h-75</div>
+    <div class="h-100 bg-info p-2">.h-100</div>
+    <div class="make-too-high mh-100 bg-success p-2">.mh-100</div>
+  </article>
+
+  <div class="spacing-wrapper"></div>
+
+  <article class="my-3">
+    <div class="w-25 text-justify add-border my-4 p-2">This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. Note, the last line will always be left-aligned.</div>
+    <div class="w-25 text-nowrap add-border my-4 p-2">This is .text-nowrap. It will not wrap to the next line. No sir. Nope. No way. Not gonna happen.</div>
+    <div class="w-25 text-truncate add-border my-4 p-2">This is .text-truncate. It adds an ellipse if it is greater than its parent's width.</div>
+    <div class="text-left add-border my-4 p-2">.text-left</div>
+    <div class="text-center add-border my-4 p-2">.text-center</div>
+    <div class="text-right add-border my-4 p-2">.text-right</div>
+  </article>
+
+  <article class="d-flex my-3">
+    <div class="text-lowercase p-2">.text-lowercase</div>
+    <div class="text-uppercase p-2">.text-uppercase</div>
+    <div class="text-capitalize p-2">.text-capitalize</div>
+    <div class="font-weight-bold p-2">.font-weight-bold</div>
+    <div class="add-bold font-weight-normal p-2">.font-weight-normal</div>
+    <div class="font-italic p-2">.font-italic</div>
+  </article>
+
+  <!-- //TODO .align-* -->
+
+  <button type="button" aria-label="Close">
+    <span class="close">&times;</span>
+  </button>
+
+  <div class="text-hide p-2">.text-hide (this should be hidden)</div>
+  <div class="invisible">.invisible should be invisible, but still takes up space</div>
+  <div class="sr-only">.sr-only should be hidden</div>
+  <a href="#" class="sr-only sr-only-focusable">.sr-only-focusable should be hidden until focused</a>
+
+  <!-- end of tests -->
+
+  <!-- JS template to deal with the repetitiveness of the margin and padding classes -->
+
+  <script id="spacing-classes-tpl" type="text/x-handlebars-template">
+    <article class="d-flex justify-content-between align-items-center my-3">
+      {{#each variations}}
+      <div class="d-inline-block bg-success">
+        <div class="{{#unless ../size}}{{../forceSpacingClass}} {{/unless}}{{this}} bg-primary">
+          .{{this}}
+        </div>
+      </div>
+      {{/each}}
+    </article>
+  </script>
+
+  <script>
+    const sizes = [0, 1, 2, 3, 4];
+    const variations = {
+      margin: ['m-', 'mt-', 'mr-', 'mb-', 'ml-', 'mx-', 'my-'],
+      padding: ['p-', 'pt-', 'pr-', 'pb-', 'pl-', 'px-', 'py-'],
+    };
+    let spacingWrapper = document.getElementsByClassName('spacing-wrapper')[0];
+    let spacingTpl = Handlebars.compile(document.getElementById('spacing-classes-tpl').innerHTML);
+
+    Object.keys(variations).forEach((variationType) => {
+      const forceSpacingClass = 'add-' + variationType;
+
+      sizes.forEach((size) => {
+        let holdme = document.createElement('div');
+        const types = variations[variationType].map((type) => type + size);
+        holdme.innerHTML = spacingTpl({variations: types, size, forceSpacingClass});
+        spacingWrapper.appendChild(holdme.children[0]);
+      });
+    });
+  </script>
+
+</body>
+</html>

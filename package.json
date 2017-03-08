@@ -1,0 +1,34 @@
+{
+  "name": "bootstrap4-classes-for-bs3",
+  "version": "4.0.0-alpha.6",
+  "description": "Backport of Bootstrap 4 utility classes for Bootstrap 3",
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "license": "MIT",
+  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
+  "contributors": [
+    "John Barreiros <johnbarreiros2@gmail.com>"
+  ],
+  "sass": "src/bootstrap4-classes-for-bs3.scss",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "prebuild": "rimraf dist/css/*",
+    "build": "node-sass --include-path node_modules src/bootstrap4-classes-for-bs3.scss dist/css/bootstrap4-classes-for-bs3.css",
+    "postbuild": "cleancss -o dist/css/bootstrap4-classes-for-bs3.min.css dist/css/bootstrap4-classes-for-bs3.css",
+    "build:test": "node-sass --include-path node_modules test/index.scss test/index.css"
+  },
+  "dependencies": {
+    "bootstrap-sass": "3.3.7",
+    "bootstrap": "4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.0.8",
+    "node-sass": "^4.5.0",
+    "rimraf": "^2.6.0"
+  }
+}

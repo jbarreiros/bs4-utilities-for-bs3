@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap4-classes-for-bs3",
+  "description": "Backport of Bootstrap 4 utility classes for Bootstrap 3",
+  "main": [
+    "src/bootstrap4-classes-for-bs3.scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "bootstrap-sass": "3.3.7",
+    "bootstrap": "4.0.0-alpha.6"
+  },
+}

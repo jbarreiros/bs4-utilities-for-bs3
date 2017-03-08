@@ -1,0 +1,23 @@
+//
+// Contextual backgrounds
+//
+
+// This file has been duplicated because most of the classes already exist for
+// BS3. Overlapping classes are commented out to prevent duplicate classes.
+
+.bg-faded {
+  background-color: darken($body-bg, 3%);
+}
+
+// @include bg-variant('.bg-primary', $brand-primary);
+
+// @include bg-variant('.bg-success', $brand-success);
+
+// @include bg-variant('.bg-info', $brand-info);
+
+// @include bg-variant('.bg-warning', $brand-warning);
+
+// @include bg-variant('.bg-danger', $brand-danger);
+
+// BS3 does not have the $brand-inverse variable
+// @include bg-variant('.bg-inverse', $brand-inverse);
