@@ -8,96 +8,132 @@
 </head>
 <body>
   <div class="page-header">
-    <p>This ugly steaming pile is a test page! Visit the <a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a> for the real deets.</p>
+    <h1>This ugly steaming pile is a test page! Visit the <a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a> for the real deets.</h1>
   </div>
 
-  <article class="d-flex my-3">
-    <div class="add-border border-0 p-2">.border-0</div>
-    <div class="add-border border-top-0 ml-2 p-2">.border-top-0</div>
-    <div class="add-border border-right-0 ml-2 p-2">.border-right-0</div>
-    <div class="add-border border-bottom-0 ml-2 p-2">.border-bottom-0</div>
-    <div class="add-border border-left-0 ml-2 p-2">.border-left-0</div>
-    <div class="add-border rounded ml-2 p-2">.rounded</div>
-    <div class="add-border rounded-top ml-2 p-2">.rounded-top</div>
-    <div class="add-border rounded-right ml-2 p-2">.rounded-right</div>
-    <div class="add-border rounded-bottom ml-2 p-2">.rounded-bottom</div>
-    <div class="add-border rounded-left ml-2 p-2">.rounded-left</div>
-    <div class="add-border rounded-0 ml-2 p-2">.rounded-0</div>
-  </article>
+  <div class="d-flex my-3">
+    <div class="border p-2">.border</div>
+    <div class="border border-0 p-2">.border-0</div>
+    <div class="border border-top-0 ml-2 p-2">.border-top-0</div>
+    <div class="border border-right-0 ml-2 p-2">.border-right-0</div>
+    <div class="border border-bottom-0 ml-2 p-2">.border-bottom-0</div>
+    <div class="border border-left-0 ml-2 p-2">.border-left-0</div>
+  </div>
 
-  <article class="d-flex my-3">
+  <div class="d-flex my-3">
+    <div class="border border-primary p-2">.border-primary</div>
+    <div class="border border-secondary ml-2 p-2"><del>.border-secondary</del></div>
+    <div class="border border-success ml-2 p-2">.border-success</div>
+    <div class="border border-danger ml-2 p-2">.border-danger</div>
+    <div class="border border-warning ml-2 p-2">.border-warning</div>
+    <div class="border border-info ml-2 p-2">.border-info</div>
+    <div class="border border-light ml-2 p-2"><del>.border-light</del></div>
+    <div class="border border-dark ml-2 p-2"><del>.border-dark</del></div>
+    <div class="border border-white ml-2 p-2">.border-white</div>
+  </div>
+
+  <div class="d-flex my-3">
+    <div class="border rounded p-2">.rounded</div>
+    <div class="border rounded-top ml-2 p-2">.rounded-top</div>
+    <div class="border rounded-right ml-2 p-2">.rounded-right</div>
+    <div class="border rounded-bottom ml-2 p-2">.rounded-bottom</div>
+    <div class="border rounded-left ml-2 p-2">.rounded-left</div>
+    <div class="border rounded-circle ml-2 p-2">.rounded-circle</div>
+    <div class="border rounded-0 ml-2 p-2">.rounded-0</div>
+  </div>
+
+  <div class="d-flex my-3">
     <div class="text-muted p-2">.text-muted</div>
     <div class="text-primary p-2">.text-primary</div>
+    <div class="text-secondary p-2"><del>.text-secondary</del></div>
     <div class="text-success p-2">.text-success</div>
-    <div class="text-info p-2">.text-info</div>
-    <div class="text-warning p-2">.text-warning</div>
     <div class="text-danger p-2">.text-danger</div>
-    <div class="bg-primary text-white p-2">.text-white</div>
-    <div class="text-gray-dark p-2">.text-gray-dark</div>
-  </article>
+    <div class="text-warning p-2">.text-warning</div>
+    <div class="text-info p-2">.text-info</div>
+    <div class="text-light p-2"><del>.text-light</del></div>
+    <div class="text-dark p-2"><del>.text-dark</del></div>
+  </div>
 
-  <article class="d-flex my-3">
+  <div class="d-flex my-3">
     <div class="bg-primary p-2">.bg-primary</div>
+    <div class="bg-secondary p-2"><del>.bg-primary</del></div>
     <div class="bg-success p-2">.bg-success</div>
-    <div class="bg-info p-2">.bg-info</div>
+    <div class="bg-danger p-2">.bg-info</div>
     <div class="bg-warning p-2">.bg-warning</div>
-    <div class="bg-danger p-2">.bg-danger</div>
-    <div class="bg-faded p-2">.bg-faded</div>
-  </article>
+    <div class="bg-info p-2">.bg-danger</div>
+    <div class="bg-light p-2"><del>.bg-light</del></div>
+    <div class="bg-dark p-2"><del>.bg-dark</del></div>
+    <div class="bg-white p-2">.bg-white</div>
+  </div>
 
-  <article class="my-3">
-    <span class="d-block bg-primary p-2">.d-block</span>
+  <div class="my-3">
+    <div class="d-none bg-primary p-2">This should be invisible</div>
     <div class="d-inline bg-primary p-2">.d-inline</div>
     <span class="d-inline-block bg-primary p-2">.d-inline-block</span>
+    <span class="d-block bg-primary p-2">.d-block</span>
     <!-- //TODO d-table, d-table-cell, d-flex, d-inline-flex-->
-    <div class="d-none bg-primary p-2">This should be invisible</div>
-  </article>
+  </div>
 
-  <!-- //TODO .fixed-top, .fixed-bottom, .sticky-top -->
-
-  <article class="clearfix my-3">
+  <div class="clearfix my-3">
     <div class="float-left bg-primary p-2">.float-left</div>
     <div class="float-right bg-primary p-2">.float-right</div>
     <div class="float-right float-none p-2">.float-none</div>
-  </article>
+  </div>
 
-  <article class="my-3">
+  <!-- //TODO .text-hide, .invisible -->
+
+  <!-- //TODO .fixed-top, .fixed-bottom, .sticky-top -->
+
+  <!-- //TODO .sr-only, .sr-only-focusable -->
+
+  <div class="my-3">
     <div class="w-25 bg-success p-2 ">.w-25</div>
     <div class="w-50 bg-info p-2">.w-50</div>
     <div class="w-75 bg-success p-2">.w-75</div>
     <div class="w-100 bg-info p-2">.w-100</div>
-    <div class="make-too-wide mw-100 bg-success p-2">.mw-100</div>
-  </article>
+    <div class="mw-100 bg-success p-2" style="width:150%;">.mw-100</div>
+  </div>
 
-  <article class="make-fixed-height add-border d-flex my-3">
+  <div class="border d-flex my-3" style="height:50px;">
     <div class="h-25 bg-success p-2">.h-25</div>
     <div class="h-50 bg-info p-2">.h-50</div>
     <div class="h-75 bg-success p-2">.h-75</div>
     <div class="h-100 bg-info p-2">.h-100</div>
-    <div class="make-too-high mh-100 bg-success p-2">.mh-100</div>
-  </article>
+    <div class="mh-100 bg-success p-2" style="height:150%;">.mh-100</div>
+  </div>
 
   <div class="spacing-wrapper"></div>
 
-  <article class="my-3">
-    <div class="w-25 text-justify add-border my-4 p-2">This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. Note, the last line will always be left-aligned.</div>
-    <div class="w-25 text-nowrap add-border my-4 p-2">This is .text-nowrap. It will not wrap to the next line. No sir. Nope. No way. Not gonna happen.</div>
-    <div class="w-25 text-truncate add-border my-4 p-2">This is .text-truncate. It adds an ellipse if it is greater than its parent's width.</div>
-    <div class="text-left add-border my-4 p-2">.text-left</div>
-    <div class="text-center add-border my-4 p-2">.text-center</div>
-    <div class="text-right add-border my-4 p-2">.text-right</div>
-  </article>
+  <div class="my-3">
+    <div class="w-25 text-justify border my-4 p-2">This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. Note, the last line will always be left-aligned.</div>
+    <div class="text-left border my-4 p-2">.text-left</div>
+    <div class="text-center border my-4 p-2">.text-center</div>
+    <div class="text-right border my-4 p-2">.text-right</div>
+    <div class="w-25 text-nowrap border my-4 p-2">This is .text-nowrap. It will not wrap to the next line. No sir. Nope. No way. Not gonna happen.</div>
+    <div class="w-25 text-truncate border my-4 p-2">This is .text-truncate. It adds an ellipse if it is greater than its parent's width.</div>
+  </div>
 
-  <article class="d-flex my-3">
+  <div class="d-flex my-3">
     <div class="text-lowercase p-2">.text-lowercase</div>
     <div class="text-uppercase p-2">.text-uppercase</div>
     <div class="text-capitalize p-2">.text-capitalize</div>
     <div class="font-weight-bold p-2">.font-weight-bold</div>
-    <div class="add-bold font-weight-normal p-2">.font-weight-normal</div>
+    <div class="p-2"><b class="font-weight-normal">.font-weight-normal</b></div>
     <div class="font-italic p-2">.font-italic</div>
-  </article>
+  </div>
 
-  <!-- //TODO .align-* -->
+  <table style="height: 100px;">
+    <tbody>
+      <tr>
+        <td class="border align-baseline">baseline</td>
+        <td class="border align-top">top</td>
+        <td class="border align-middle">middle</td>
+        <td class="border align-bottom">bottom</td>
+        <td class="border align-text-top">text-top</td>
+        <td class="border align-text-bottom">text-bottom</td>
+      </tr>
+    </tbody>
+  </table>
 
   <button type="button" aria-label="Close">
     <span class="close">&times;</span>
@@ -113,7 +149,7 @@
   <!-- JS template to deal with the repetitiveness of the margin and padding classes -->
 
   <script id="spacing-classes-tpl" type="text/x-handlebars-template">
-    <article class="d-flex justify-content-between align-items-center my-3">
+    <div class="d-flex justify-content-between align-items-center my-3">
       {{#each variations}}
       <div class="d-inline-block bg-success">
         <div class="{{#unless ../size}}{{../forceSpacingClass}} {{/unless}}{{this}} bg-primary">
@@ -121,7 +157,7 @@
         </div>
       </div>
       {{/each}}
-    </article>
+    </div>
   </script>
 
   <script>

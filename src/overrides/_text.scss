@@ -2,14 +2,11 @@
 // Text
 //
 
-// This file has been duplicated because some of the classes already exist for
-// BS3. Overlapping classes are commented out to prevent duplicate classes.
-
 // Alignment
 
 .text-justify  { text-align: justify !important; }
 .text-nowrap   { white-space: nowrap !important; }
-.text-truncate { @include text-overflow; } // use BS3 text-overflow mixin
+.text-truncate { @include text-truncate; }
 
 // Responsive alignment
 
@@ -37,28 +34,16 @@
 
 // Contextual colors
 
-.text-white {
-  color: #fff !important;
-}
+.text-white { color: #fff !important; }
 
-// @include text-emphasis-variant('.text-muted', $text-muted);
+// @each $color, $value in $theme-colors {
+//   @include text-emphasis-variant('.text-#{$color}', $value);
+// }
 
-// @include text-emphasis-variant('.text-primary', $brand-primary);
-
-// @include text-emphasis-variant('.text-success', $brand-success);
-
-// @include text-emphasis-variant('.text-info', $brand-info);
-
-// @include text-emphasis-variant('.text-warning', $brand-warning);
-
-// @include text-emphasis-variant('.text-danger', $brand-danger);
-
-// Font color
-
-@include text-emphasis-variant('.text-gray-dark', $gray-dark);
+.text-muted { color: $text-muted !important; }
 
 // Misc
 
-// .text-hide {
-//   @include text-hide();
-// }
+.text-hide {
+  @include text-hide();
+}

@@ -1,41 +1,27 @@
 // Bootstrap 4 variable overrides
 
-$border-radius: $border-radius-base !default;
-$zindex-fixed: 1030 !default;
-$zindex-sticky: 1030 !default;
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
+$white:  #fff !default;
 
-$spacer-x: $padding-base-vertical;
-$spacer-y: $padding-base-horizontal;
+$theme-colors: (
+  primary: $brand-primary,
+  // secondary: $gray-600,
+  success: $brand-success,
+  info: $brand-info,
+  warning: $brand-warning,
+  danger: $brand-danger,
+  // light: $gray-100,
+  // dark: $gray-800
+) !default;
+
+$enable-hover-media-query:  false !default;
+
+$spacer: $padding-base-horizontal;
 $spacers: (
-  0: (
-    x: 0,
-    y: 0
-  ),
-  1: (
-    x: $padding-xs-horizontal,
-    y: $padding-xs-vertical
-  ),
-  2: (
-    x: $padding-small-horizontal,
-    y: $padding-small-vertical
-  ),
-  3: (
-    x: $spacer-x,
-    y: $spacer-y
-  ),
-  4: (
-    x: $padding-large-horizontal,
-    y: $padding-large-vertical
-  )
-);
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 768px,
-  md: 992px,
-  lg: 1200px
+  0: 0,
+  1: $padding-xs-horizontal,
+  2: $padding-small-horizontal,
+  3: $spacer,
+  4: $padding-large-horizontal
 );
 
 $sizes: (
@@ -44,3 +30,24 @@ $sizes: (
   75: 75%,
   100: 100%
 ) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+$border-width: 1px !default;
+$border-color: $gray-lighter !default;
+
+$border-radius: $border-radius-base !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$zindex-fixed: 1030 !default;
+$zindex-sticky: 1030 !default;
+
+

@@ -1,36 +1,6 @@
-@import "bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../src/bootstrap4-classes-for-bs3";
+@import 'bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../src/bootstrap4-classes-for-bs3';
 
 body {
   margin: 2em;
 }
-
-.add-border {
-  border: 1px solid $brand-primary;
-}
-
-.add-margin {
-  margin: $padding-large-vertical $padding-large-horizontal;
-}
-
-.add-padding {
-  padding: $padding-large-vertical $padding-large-horizontal;
-}
-
-.add-bold {
-  font-weight: bold;
-}
-
-.make-too-wide {
-  width: 150%;
-}
-
-.make-too-high {
-  height: 150%;
-}
-
-.make-fixed-height {
-  height: 50px;
-}
-
-

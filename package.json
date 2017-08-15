@@ -1,6 +1,6 @@
 {
   "name": "bootstrap4-classes-for-bs3",
-  "version": "4.0.0-alpha.6",
+  "version": "4.0.0-beta",
   "description": "Backport of Bootstrap 4 utility classes for Bootstrap 3",
   "homepage": "",
   "bugs": {
@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "bootstrap-sass": "3.3.7",
-    "bootstrap": "4.0.0-alpha.6"
+    "bootstrap": "4.0.0-beta"
   },
   "devDependencies": {
-    "clean-css-cli": "^4.0.8",
-    "node-sass": "^4.5.0",
+    "clean-css-cli": "^4.1.6",
+    "node-sass": "^4.5.3",
     "rimraf": "^2.6.0"
   }
 }
