@@ -1,8 +1,8 @@
 {
-  "name": "bootstrap4-classes-for-bs3",
-  "description": "Backport of Bootstrap 4 utility classes for Bootstrap 3",
+  "name": "bootstrap4-utilities-for-bs3",
+  "description": "Backport of Boostrap 4's utility classes",
   "main": [
-    "src/bootstrap4-classes-for-bs3.scss"
+    "src/bs4-utilities-for-bs3.scss"
   ],
   "license": "MIT",
   "ignore": [
@@ -12,13 +12,13 @@
     "test",
     "tests"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/jbarreiros/bs4-utilities-for-bs3",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jbarreiros/bs4-utilities-for-bs3"
   },
   "dependencies": {
     "bootstrap-sass": "3.3.7",
-    "bootstrap": "4.0.0-alpha.6"
+    "bootstrap": "4.0.0-beta"
   },
 }

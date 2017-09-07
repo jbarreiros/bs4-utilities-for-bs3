@@ -1,11 +1,9 @@
-# A backport of Boostrap 4's utility classes
-
-**Important! Bootstrap 4 is still in alpha and its utility classes are subject to change.**
+# Backport of Bootstrap 4's utility classes
 
 ## Reference
 
 * [Bootstrap 3 classes](http://getbootstrap.com/css/#helper-classes)
-* [Bootstrap 4 classes](https://v4-alpha.getbootstrap.com/utilities)
+* [Bootstrap 4 classes](https://getbootstrap.com/docs/4.0/utilities)
 
 #### Spacing
 
@@ -63,7 +61,7 @@ Class | BS3 | Notes
 `.bg-light` || Not ported. Uses color only available in BS4.
 `.bg-dark` || Not ported. Uses color only available in BS4.
 `.bg-white` ||
-|Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://v4-alpha.getbootstrap.com/utilities/flexbox/).
+|Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getbootstrap.com/docs/4.0/utilities/flex/).
 `.d-none` || Also provides `.d-(sm\|md\|lg)-none`
 `.d-inline` || Also provides `.d-(sm\|md\|lg)-inline`
 `.d-inline-block` || Also provides `.d-(sm\|md\|lg)-inline-block`
