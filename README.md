@@ -1,5 +1,14 @@
 # Backport of Bootstrap 4's utility classes
 
+## Using
+
+* Install with [npm](https://www.npmjs.com/): `npm install bs4-utilities-for-bs3`
+* CSS only
+  * `<link rel="stylesheet" href="dist/css/bs4-utilities-for-bs3.css">`
+* Import SASS
+  * `@import 'node_modules/bs4-utilities-for-bs3/src/bs4-utilities-for-bs3.scss'`
+  * Tip: Avoid specifying "node_modules/" in the path by using the [includePaths option](https://github.com/sass/node-sass#includepaths).
+
 ## Reference
 
 * [Bootstrap 3 classes](http://getbootstrap.com/css/#helper-classes)
