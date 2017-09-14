@@ -17,11 +17,15 @@
     "url": "https://github.com/jbarreiros/bs4-utilities-for-bs3"
   },
   "scripts": {
+    "start": "run-s build watch",
     "prebuild": "rimraf dist/css/*",
-    "build": "npm-run-all build:*",
+    "build": "run-s build:*",
     "postbuild": "cleancss -o dist/css/bs4-utilities-for-bs3.min.css dist/css/bs4-utilities-for-bs3.css",
     "build:sass": "node-sass --include-path node_modules src/bs4-utilities-for-bs3.scss dist/css/bs4-utilities-for-bs3.css",
-    "build:test": "node-sass --include-path node_modules test/index.scss test/index.css"
+    "build:test": "node-sass --include-path node_modules test/index.scss test/index.css",
+    "watch": "run-p watch:*",
+    "watch:sass": "npm run build:sass -- --watch",
+    "watch:test": "npm run build:test -- --watch"
   },
   "dependencies": {
     "bootstrap-sass": "3.3.7",
