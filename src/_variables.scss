@@ -2,7 +2,8 @@
 
 $white:  #fff !default;
 
-$theme-colors: (
+$theme-colors: () !default;
+$theme-colors: map-merge((
   primary: $brand-primary,
   // secondary: $gray-600,
   success: $brand-success,
@@ -11,8 +12,9 @@ $theme-colors: (
   danger: $brand-danger,
   // light: $gray-100,
   // dark: $gray-800
-) !default;
+), $theme-colors);
 
+$enable-gradients:          false !default;
 $enable-hover-media-query:  false !default;
 
 $spacer: $padding-base-horizontal;

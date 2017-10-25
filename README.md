@@ -52,7 +52,6 @@ Class | BS3 | Notes
 `.rounded-0` ||
 `.clearfix` | X |
 `.close` | X |
-`.text-muted` | X |
 `.text-primary` | X |
 `.text-secondary` || Not ported. Uses color only available in BS4.
 `.text-success` | X |
@@ -61,6 +60,8 @@ Class | BS3 | Notes
 `.text-danger` | X |
 `.text-light` || Not ported. Uses color only available in BS4.
 `.text-dark` || Not ported. Uses color only available in BS4.
+`.text-muted` | X |
+`.text-white` | X |
 `.bg-primary` | X |
 `.bg-secondary` || Not ported. Uses color only available in BS4.
 `.bg-success` | X |
@@ -70,7 +71,6 @@ Class | BS3 | Notes
 `.bg-light` || Not ported. Uses color only available in BS4.
 `.bg-dark` || Not ported. Uses color only available in BS4.
 `.bg-white` ||
-|Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getbootstrap.com/docs/4.0/utilities/flex/).
 `.d-none` || Also provides `.d-(sm\|md\|lg)-none`
 `.d-inline` || Also provides `.d-(sm\|md\|lg)-inline`
 `.d-inline-block` || Also provides `.d-(sm\|md\|lg)-inline-block`
@@ -79,11 +79,15 @@ Class | BS3 | Notes
 `.d-table-cell` || Also provides `.d-(sm\|md\|lg)-table-cell`
 `.d-flex` || Also provides `.d-(sm\|md\|lg)-flex`
 `.d-inline-flex` || Also provides `.d-(sm\|md\|lg)-inline-flex`
+`.d-print-block` ||
+`.d-print-inline` ||
+`.d-print-inline-block` ||
+`.d-print-none` ||
+Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getbootstrap.com/docs/4.0/utilities/flex/).
 `.float-left` || Also provides `.float-(sm\|md\|lg)-left`
 `.float-right` || Also provides `.float-(sm\|md\|lg)-right`
 `.float-none` || Also provides `.float-(sm\|md\|lg)-none`
 `.text-hide` | X |
-`.invisible` ||
 `.fixed-top` ||
 `.fixed-bottom` ||
 `.sticky-top` ||
@@ -113,18 +117,17 @@ Class | BS3 | Notes
 `.text-capitalize` ||
 `.font-weight-bold` ||
 `.font-weight-normal` ||
+`.font-weight-light` || Not ported. Uses color only available in BS4. 
 `.font-italic` ||
+`.text-hide` ||
 `.align-baseline` ||
 `.align-top` ||
 `.align-middle` ||
 `.align-bottom` ||
 `.align-text-top` ||
 `.align-text-bottom` ||
-`.hidden-(xs\|sm\|md\|lg)-(up\|down)` ||
-`.visible-print-block` | X |
-`.visible-print-inline` | X |
-`.visible-print-inline-block` | X |
-`.hidden-print` | X |
+`.visible` ||
+`.invisible` ||
 
 #### Deprecated
 
@@ -136,4 +139,4 @@ BS3 Class | Notes
 `.hide` | Same as `.d-none`
 `.pull-left` | Same as `.float-left`
 `.pull-right` | Same as `.float-right`
-`.hidden-*`, `.visible-*` | Replaced by `.hidden-*-up` and `.hidden-*-down`
+`.visible-*`, `.hidden-*` | Replaced by `.d-*` utilities

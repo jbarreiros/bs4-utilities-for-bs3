@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "bootstrap-sass": "3.3.7",
-    "bootstrap": "4.0.0-beta"
+    "bootstrap": "4.0.0-beta.2"
   },
   "devDependencies": {
     "clean-css-cli": "^4.1.6",
