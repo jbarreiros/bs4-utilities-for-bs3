@@ -1,4 +1,6 @@
-# Backport of Bootstrap 4's utility classes
+# Bootstrap 4's Utility Classes for Bootstrap 3
+
+Backports Bootstrap 4's awesome [utility/helper classes](https://getbootstrap.com/docs/4.0/utilities) for use in your Bootstrap 3 project.
 
 ## Using
 
