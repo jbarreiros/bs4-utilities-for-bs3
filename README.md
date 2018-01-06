@@ -6,7 +6,7 @@
 * CSS only
   * `<link rel="stylesheet" href="dist/css/bs4-utilities-for-bs3.css">`
 * Import SASS
-  * `@import 'node_modules/bs4-utilities-for-bs3/src/bs4-utilities-for-bs3.scss'`
+  * `@import 'node_modules/bs4-utilities-for-bs3/src/bs4-utilities-for-bs3'`
   * Tip: Avoid specifying "node_modules/" in the path by using the [includePaths option](https://github.com/sass/node-sass#includepaths).
 
 ## Reference
@@ -117,7 +117,7 @@ Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getboo
 `.text-capitalize` ||
 `.font-weight-bold` ||
 `.font-weight-normal` ||
-`.font-weight-light` || Not ported. Uses color only available in BS4. 
+`.font-weight-light` || Not ported. Uses color only available in BS4.
 `.font-italic` ||
 `.text-hide` ||
 `.align-baseline` ||
