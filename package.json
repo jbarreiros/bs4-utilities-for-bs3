@@ -28,7 +28,7 @@
     "watch:test": "npm run build:test -- --watch"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-beta.3",
+    "bootstrap": "^4.0.0",
     "bootstrap-sass": "3.3.7"
   },
   "devDependencies": {

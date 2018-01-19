@@ -31,6 +31,10 @@ BS4 size | BS3 size | Notes
 Class | BS3 | Notes
 :----- |:---:|:-----
 `.border` ||
+`.border-top` ||
+`.border-right` ||
+`.border-bottom` ||
+`.border-left` ||
 `.border-0` ||
 `.border-top-0` ||
 `.border-right-0` ||
@@ -78,13 +82,19 @@ Class | BS3 | Notes
 `.d-inline-block` || Also provides `.d-(sm\|md\|lg)-inline-block`
 `.d-block` || Also provides `.d-(sm\|md\|lg)-block`
 `.d-table` || Also provides `.d-(sm\|md\|lg)-table`
+`.d-table-row` || Also provides `.d-(sm\|md\|lg)-table-row`
 `.d-table-cell` || Also provides `.d-(sm\|md\|lg)-table-cell`
 `.d-flex` || Also provides `.d-(sm\|md\|lg)-flex`
 `.d-inline-flex` || Also provides `.d-(sm\|md\|lg)-inline-flex`
-`.d-print-block` ||
+`.d-print-none` ||
 `.d-print-inline` ||
 `.d-print-inline-block` ||
-`.d-print-none` ||
+`.d-print-block` ||
+`.d-print-table` ||
+`.d-print-table-row` ||
+`.d-print-table-cell` ||
+`.d-print-flex` ||
+`.d-print-inline-flex` ||
 Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getbootstrap.com/docs/4.0/utilities/flex/).
 `.float-left` || Also provides `.float-(sm\|md\|lg)-left`
 `.float-right` || Also provides `.float-(sm\|md\|lg)-right`
