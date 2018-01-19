@@ -25,7 +25,9 @@
     "build:test": "node-sass --include-path node_modules --source-map-embed test/index.scss test/index.css",
     "watch": "run-p watch:*",
     "watch:sass": "npm run build:sass -- --watch",
-    "watch:test": "npm run build:test -- --watch"
+    "watch:test": "npm run build:test -- --watch",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
