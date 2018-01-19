@@ -56,24 +56,24 @@ Class | BS3 | Notes
 `.rounded-left` ||
 `.rounded-circle` ||
 `.rounded-0` ||
-`.clearfix` | X |
-`.close` | X |
-`.text-primary` | X |
+`.clearfix` | &check; |
+`.close` | &check; |
+`.text-primary` | &check; |
 `.text-secondary` || Not ported. Uses color only available in BS4.
-`.text-success` | X |
-`.text-info` | X |
-`.text-warning` | X |
-`.text-danger` | X |
+`.text-success` | &check; |
+`.text-info` | &check; |
+`.text-warning` | &check; |
+`.text-danger` | &check; |
 `.text-light` || Not ported. Uses color only available in BS4.
 `.text-dark` || Not ported. Uses color only available in BS4.
-`.text-muted` | X |
-`.text-white` | X |
-`.bg-primary` | X |
+`.text-muted` | &check; |
+`.text-white` | &check; |
+`.bg-primary` | &check; |
 `.bg-secondary` || Not ported. Uses color only available in BS4.
-`.bg-success` | X |
-`.bg-danger` | X |
-`.bg-warning` | X |
-`.bg-info` | X |
+`.bg-success` | &check; |
+`.bg-danger` | &check; |
+`.bg-warning` | &check; |
+`.bg-info` | &check; |
 `.bg-light` || Not ported. Uses color only available in BS4.
 `.bg-dark` || Not ported. Uses color only available in BS4.
 `.bg-white` ||
@@ -99,12 +99,12 @@ Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getboo
 `.float-left` || Also provides `.float-(sm\|md\|lg)-left`
 `.float-right` || Also provides `.float-(sm\|md\|lg)-right`
 `.float-none` || Also provides `.float-(sm\|md\|lg)-none`
-`.text-hide` | X |
+`.text-hide` | &check; |
 `.fixed-top` ||
 `.fixed-bottom` ||
 `.sticky-top` ||
-`.sr-only` | X |
-`.sr-only-focusable` | X |
+`.sr-only` | &check; |
+`.sr-only-focusable` | &check; |
 `.w-25` ||
 `.w-50` ||
 `.w-75` ||
@@ -119,9 +119,9 @@ Flexbox utilities|| Too many too list! See the [Bootstrap 4 docs](https://getboo
 `.m-auto, .m(t\|r\|b\|l\|x\|y)-auto` || Also provides responsive, e.g. `.m-(sm-md-lg)-auto`
 `.p-[0-4], .p(t\|r\|b\|l\|x\|y)-[0-4]` || Also provides responsive, e.g. `.pr-(sm\|md\|lg)-1`
 `.text-justify` ||
-`.text-left` | X | Also provides `.text-(sm\|md\|lg)-left`
-`.text-center` | X | Also provides `.text-(sm\|md\|lg)-center`
-`.text-right` | X | Also provides `.text-(sm\|md\|lg)-right`
+`.text-left` | &check; | Also provides `.text-(sm\|md\|lg)-left`
+`.text-center` | &check; | Also provides `.text-(sm\|md\|lg)-center`
+`.text-right` | &check; | Also provides `.text-(sm\|md\|lg)-right`
 `.text-nowrap` ||
 `.text-truncate` ||
 `.text-lowercase` ||
