@@ -1,6 +1,7 @@
 // Bootstrap 4 variable overrides
 
-$white:  #fff !default;
+$white: #fff !default;
+$black: #000 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -14,8 +15,8 @@ $theme-colors: map-merge((
   // dark: $gray-800
 ), $theme-colors);
 
-$enable-gradients:          false !default;
-$enable-hover-media-query:  false !default;
+$enable-gradients: false !default;
+$enable-hover-media-query: false !default;
 
 $spacer: $padding-base-horizontal !default;
 $spacers: () !default;
@@ -32,8 +33,11 @@ $sizes: map-merge((
   25: 25%,
   50: 50%,
   75: 75%,
-  100: 100%
+  100: 100%,
+  auto: auto
 ), $sizes);
+
+$body-color: $text-color !default;
 
 $grid-breakpoints: (
   xs: 0,
@@ -46,6 +50,10 @@ $border-width: 1px !default;
 $border-color: $gray-lighter !default;
 
 $border-radius: $border-radius-base !default;
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
 
 $font-weight-light: 300 !default;
 $font-weight-normal: normal !default;
