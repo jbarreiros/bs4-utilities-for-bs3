@@ -11,6 +11,8 @@
     <h1 class="mt-0">This ugly steaming pile is a test page! Visit the <a href="http://getbootstrap.com/" target="_blank">Bootstrap docs</a> for the real deets.</h1>
   </div>
 
+  <h2>Borders</h2>
+
   <div class="d-flex my-3">
     <div class="border border-primary p-2">.border</div>
     <div class="border-top border-primary ml-2 p-2">.border-top</div>
@@ -50,6 +52,27 @@
   </div>
 
   <div class="d-flex my-3">
+    <div class="shadow-none p-2 mr-2 mb-2">.shadow-none</div>
+    <div class="shadow-sm p-2 mr-2 mb-2">.shadow-sm</div>
+    <div class="shadow p-2 mr-2 mb-2">.shadow</div>
+    <div class="shadow-lg p-2 mb-2">.shadow-lg</div>
+  </div>
+
+  <h2>Clearfix</h2>
+
+  <p>See https://getbootstrap.com/docs/4.0/utilities/clearfix/</p>
+
+  <h2>Close icon</h2>
+
+  <div class="d-inline-block">
+    <button type="button" class="close" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <h2>Colors</h2>
+
+  <div class="d-flex my-3">
     <div class="text-primary p-2">.text-primary</div>
     <div class="text-secondary p-2"><del title="Not ported">.text-secondary</del></div>
     <div class="text-success p-2">.text-success</div>
@@ -78,6 +101,10 @@
     <div class="bg-transparent p-2">.bg-transparent</div>
   </div>
 
+  <!-- //TODO .bg-gradient-* -->
+
+  <h2>Display</h2>
+
   <div class="my-3">
     <div class="d-none bg-primary p-2">This should be invisible</div>
     <div class="d-inline bg-primary p-2">.d-inline</div>
@@ -87,7 +114,15 @@
     <!-- //TODO d-print-* -->
   </div>
 
-  <!-- For flex classes, see http://getbootstrap.com/docs/4.0/utilities/flex/ -->
+  <h2>Embed</h2>
+
+  <p>TODO</p>
+
+  <h2>Flex</h2>
+
+  <p>See http://getbootstrap.com/docs/4.0/utilities/flex/</p>
+
+  <h2>Float</h2>
 
   <div class="clearfix my-3">
     <div class="float-left bg-primary p-2">.float-left</div>
@@ -95,15 +130,22 @@
     <div class="float-right float-none p-2">.float-none</div>
   </div>
 
+  <h2>Image replacement</h2>
+
+  <div class="text-hide p-2">.text-hide (this should be hidden)</div>
+
+  <h2>Position</h2>
+
+  <p>TODO</p>
   <!-- //TODO .position-static, .position-relative, .position-absolute, .position-fixed, .position-sticky -->
   <!-- //TODO .fixed-top, .fixed-bottom, .sticky-top -->
 
-  <div class="d-flex my-3">
-    <div class="shadow-none p-2 mr-2 mb-2">.shadow-none</div>
-    <div class="shadow-sm p-2 mr-2 mb-2">.shadow-sm</div>
-    <div class="shadow p-2 mr-2 mb-2">.shadow</div>
-    <div class="shadow-lg p-2 mb-2">.shadow-lg</div>
-  </div>
+  <h2>Screenreaders</h2>
+
+  <div class="sr-only">.sr-only should be hidden</div>
+  <div><a href="#" class="sr-only sr-only-focusable">.sr-only-focusable should be hidden until focused</a></div>
+
+  <h2>Sizing</h2>
 
   <div class="my-3">
     <div class="w-25 bg-success p-2 ">.w-25</div>
@@ -123,7 +165,12 @@
     <div class="mh-100 bg-info p-2" style="height:150%;">.mh-100</div>
   </div>
 
+  <h2>Spacing</h2>
+
   <div class="spacing-wrapper"></div>
+  <!-- //TODO negative margins -->
+
+  <h2>Text</h2>
 
   <div class="my-3">
     <div class="w-25 text-justify border border-primary my-4 p-2">This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. This is .text-justify. Note, the last line will always be left-aligned.</div>
@@ -138,12 +185,17 @@
     <div class="text-lowercase p-2">.text-lowercase</div>
     <div class="text-uppercase p-2">.text-uppercase</div>
     <div class="text-capitalize p-2">.text-capitalize</div>
+    <div class="font-weight-bolder p-2">.font-weight-bolder</div>
     <div class="font-weight-bold p-2">.font-weight-bold</div>
     <div class="font-weight-normal p-2">.font-weight-normal</div>
     <div class="font-weight-light p-2">.font-weight-light</div>
+    <div class="font-weight-lighter p-2">.font-weight-lighter</div>
     <div class="font-italic p-2">.font-italic</div>
     <div class="text-monospace p-2">.text-monospace</div>
+    <div class="p-2"><a href="javascript:void(0);" class="text-decoration-none">.text-decoration-none</a></div>
   </div>
+
+  <h2>Vertical align</h2>
 
   <table style="height: 100px;">
     <tbody>
@@ -158,16 +210,10 @@
     </tbody>
   </table>
 
-  <div class="d-inline-block">
-    <button type="button" class="close" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+  <h2>Visibility</h2>
 
-  <div class="text-hide p-2">.text-hide (this should be hidden)</div>
+  <div class="visible">.visible</div>
   <div class="invisible">.invisible should be invisible, but still takes up space</div>
-  <div class="sr-only">.sr-only should be hidden</div>
-  <a href="#" class="sr-only sr-only-focusable">.sr-only-focusable should be hidden until focused</a>
 
   <!-- end of tests -->
 

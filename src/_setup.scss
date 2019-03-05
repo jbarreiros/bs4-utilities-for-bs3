@@ -2,6 +2,7 @@
 @import 'variables';
 
 // Necessary mixins
+@import 'bootstrap/scss/mixins/deprecate';
 @import 'bootstrap/scss/mixins/background-variant';
 @import 'bootstrap/scss/mixins/breakpoints';
 @import 'bootstrap/scss/mixins/float';

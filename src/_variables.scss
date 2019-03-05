@@ -17,6 +17,7 @@ $theme-colors: map-merge((
 
 $enable-gradients: false !default;
 $enable-hover-media-query: false !default;
+$enable-deprecation-messages: true !default;
 
 $spacer: $padding-base-horizontal !default;
 $spacers: () !default;
@@ -39,6 +40,8 @@ $sizes: map-merge((
 
 $body-color: $text-color !default;
 
+$emphasized-link-hover-darken-percentage: 15% !default;
+
 $grid-breakpoints: (
   xs: 0,
   sm: 768px,
@@ -50,14 +53,34 @@ $border-width: 1px !default;
 $border-color: $gray-lighter !default;
 
 $border-radius: $border-radius-base !default;
+$border-radius-sm: $border-radius-small !default;
+$border-radius-lg: $border-radius-large !default;
+$rounded-pill: 50rem !default;
 
 $box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
 
+$embed-responsive-aspect-ratios: () !default;
+$embed-responsive-aspect-ratios: join(
+  (
+    (21 9),
+    (16 9),
+    (4 3),
+    (1 1),
+  ),
+  $embed-responsive-aspect-ratios
+);
+
+$font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
+$font-weight-bolder: bolder !default;
 
 $zindex-fixed: 1030 !default;
 $zindex-sticky: 1030 !default;
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
