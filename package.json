@@ -1,6 +1,6 @@
 {
   "name": "bs4-utilities-for-bs3",
-  "version": "4.1.3",
+  "version": "4.3.0",
   "description": "Backport of Boostrap 4's utility classes",
   "homepage": "https://github.com/jbarreiros/bs4-utilities-for-bs3",
   "bugs": {
