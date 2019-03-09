@@ -2,7 +2,7 @@
 
 $white: #fff !default;
 $black: #000 !default;
-$color-secondary: #6c757d; // BS4 $gray-600
+$color-secondary: #6c757d !default; // BS4 $gray-600
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
