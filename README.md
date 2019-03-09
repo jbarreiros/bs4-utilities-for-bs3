@@ -26,17 +26,6 @@ BS4 size | BS3 size | Notes
 4 | lg | Ex: `.pl-4` for `padding-left: $padding-lg-horizontal;`
 5 | NA | BS3 doesn't have an equivalent size.
 
-#### Not ported
-
-The following BS4 utility classes were not ported due to using color(s) only available in BS4:
-* `.border-secondary`
-* `.border-light`
-* `.border-dark`
-* `.text-secondary`
-* `.text-light`
-* `.text-dark`
-* `.font-weight-light`
-
 #### Utilities deprecated/removed in BS4
 
 BS3 Class | Notes
