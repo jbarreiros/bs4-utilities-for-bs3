@@ -48,16 +48,10 @@
     <div class="border border-primary rounded-bottom ml-2 p-2">.rounded-bottom</div>
     <div class="border border-primary rounded-left ml-2 p-2">.rounded-left</div>
     <div class="border border-primary rounded-circle ml-2 p-2">.rounded-circle</div>
+    <div class="border border-primary rounded-pill ml-2 p-2">.rounded-pill</div>
     <div class="border border-primary rounded-0 ml-2 p-2">.rounded-0</div>
     <div class="border border-primary rounded-sm ml-2 p-2">.rounded-sm</div>
     <div class="border border-primary rounded-lg ml-2 p-2">.rounded-lg</div>
-  </div>
-
-  <div class="d-flex my-3">
-    <div class="shadow-none p-2 mr-2 mb-2">.shadow-none</div>
-    <div class="shadow-sm p-2 mr-2 mb-2">.shadow-sm</div>
-    <div class="shadow p-2 mr-2 mb-2">.shadow</div>
-    <div class="shadow-lg p-2 mb-2">.shadow-lg</div>
   </div>
 
   <h2>Clearfix</h2>
@@ -91,12 +85,25 @@
   </div>
 
   <div class="d-flex my-3">
+    <div><a href="#" class="text-primary p-2">Primary link</a></div>
+    <div><a href="#" class="text-secondary p-2">Secondary link</a></div>
+    <div><a href="#" class="text-success p-2">Success link</a></div>
+    <div><a href="#" class="text-danger p-2">Danger link</a></div>
+    <div><a href="#" class="text-warning p-2">Warning link</a></div>
+    <div><a href="#" class="text-info p-2">Info link</a></div>
+    <div><a href="#" class="text-light bg-dark p-2">Light link</a></div>
+    <div><a href="#" class="text-dark p-2">Dark link</a></div>
+    <div><a href="#" class="text-muted p-2">Muted link</a></div>
+    <div><a href="#" class="text-white bg-dark p-2">White link</a></div>
+  </div>
+
+  <div class="d-flex my-3">
     <div class="bg-primary p-2">.bg-primary</div>
     <div class="bg-secondary p-2">.bg-secondary</div>
     <div class="bg-success p-2">.bg-success</div>
-    <div class="bg-danger p-2">.bg-info</div>
+    <div class="bg-danger p-2">.bg-danger</div>
     <div class="bg-warning p-2">.bg-warning</div>
-    <div class="bg-info p-2">.bg-danger</div>
+    <div class="bg-info p-2">.bg-info</div>
     <div class="bg-light p-2">.bg-light</div>
     <div class="bg-dark p-2 text-white">.bg-dark</div>
     <div class="bg-white p-2">.bg-white</div>
@@ -112,7 +119,7 @@
     <div class="d-inline bg-primary p-2">.d-inline</div>
     <span class="d-inline-block bg-primary p-2">.d-inline-block</span>
     <span class="d-block bg-primary p-2">.d-block</span>
-    <!-- //TODO d-table, d-table-cell, d-flex, d-inline-flex-->
+    <!-- //TODO d-table, d-table-cell, d-table-row, d-flex, d-inline-flex-->
     <!-- //TODO d-print-* -->
   </div>
 
@@ -136,6 +143,16 @@
 
   <div class="text-hide p-2">.text-hide (this should be hidden)</div>
 
+  <h2>Interactions</h2>
+
+  <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+  <p class="user-select-auto">This paragraph has the default select behavior.</p>
+  <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+  <h2>Overflow</h2>
+
+  <p>TODO</p>
+
   <h2>Position</h2>
 
   <p>TODO</p>
@@ -146,6 +163,15 @@
 
   <div class="sr-only">.sr-only should be hidden</div>
   <div><a href="#" class="sr-only sr-only-focusable">.sr-only-focusable should be hidden until focused</a></div>
+
+  <h2>Shadows</h2>
+
+  <div class="d-flex my-3">
+    <div class="shadow-none p-2 mr-2 mb-2">.shadow-none</div>
+    <div class="shadow-sm p-2 mr-2 mb-2">.shadow-sm</div>
+    <div class="shadow p-2 mr-2 mb-2">.shadow</div>
+    <div class="shadow-lg p-2 mb-2">.shadow-lg</div>
+  </div>
 
   <h2>Sizing</h2>
 
@@ -167,6 +193,8 @@
     <div class="mh-100 bg-info p-2" style="height:150%;">.mh-100</div>
   </div>
 
+  <!-- TODO .min-vw-100, .min-vh-100, .vw-100, .vh-100 -->
+
   <h2>Spacing</h2>
 
   <div class="spacing-wrapper"></div>
@@ -181,20 +209,26 @@
     <div class="text-right border border-primary my-4 p-2">.text-right</div>
     <div class="w-25 text-nowrap border border-primary my-4 p-2">This is .text-nowrap. It will not wrap to the next line. No sir. Nope. No way. Not gonna happen.</div>
     <div class="w-25 text-truncate border border-primary my-4 p-2">This is .text-truncate. It adds an ellipse if it is greater than its parent's width.</div>
+    <div class="w-25 text-break border border-primary my-4 p-2">Looooooooooooooooooooooooooooooooooooooooooooooooooooooooongword</div>
   </div>
 
   <div class="d-flex my-3">
-    <div class="text-lowercase p-2">.text-lowercase</div>
-    <div class="text-uppercase p-2">.text-uppercase</div>
-    <div class="text-capitalize p-2">.text-capitalize</div>
-    <div class="font-weight-bolder p-2">.font-weight-bolder</div>
-    <div class="font-weight-bold p-2">.font-weight-bold</div>
-    <div class="font-weight-normal p-2">.font-weight-normal</div>
-    <div class="font-weight-light p-2">.font-weight-light</div>
-    <div class="font-weight-lighter p-2">.font-weight-lighter</div>
-    <div class="font-italic p-2">.font-italic</div>
-    <div class="text-monospace p-2">.text-monospace</div>
-    <div class="p-2"><a href="javascript:void(0);" class="text-decoration-none">.text-decoration-none</a></div>
+    <div class="text-lowercase px-2">.text-lowercase</div>
+    <div class="text-uppercase px-2">.text-uppercase</div>
+    <div class="text-capitalize px-2">.text-capitalize</div>
+  </div>
+  <div class="d-flex my-3">
+    <div class="font-weight-bolder px-2">.font-weight-bolder</div>
+    <div class="font-weight-bold px-2">.font-weight-bold</div>
+    <div class="font-weight-normal px-2">.font-weight-normal</div>
+    <div class="font-weight-light px-2">.font-weight-light</div>
+    <div class="font-weight-lighter px-2">.font-weight-lighter</div>
+  </div>
+  <div class="d-flex my-3">
+    <div class="font-italic px-2">.font-italic</div>
+    <div class="text-monospace px-2">.text-monospace</div>
+    <div class="text-muted px-2">Muted text with a <a href="#" class="text-reset">reset link</a>.</div>
+    <div class="px-2"><a href="javascript:void(0);" class="text-decoration-none">.text-decoration-none</a></div>
   </div>
 
   <h2>Vertical align</h2>
