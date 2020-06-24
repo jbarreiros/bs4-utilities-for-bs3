@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>BS4 utilities for BS3 Test</title>
   <link rel="stylesheet" href="index.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
 </head>
 <body class="p-2">
   <div class="page-header mt-0">
@@ -253,36 +252,36 @@
 
   <!-- end of tests -->
 
-  <!-- JS template to deal with the repetitiveness of the margin and padding classes -->
-
-  <script id="spacing-classes-tpl" type="text/x-handlebars-template">
-    <div class="d-flex justify-content-between align-items-center my-3">
-      {{#each variations}}
-      <div class="d-inline-block bg-success">
-        <div class="{{#unless ../size}}{{../forceSpacingClass}} {{/unless}}{{this}} bg-primary">
-          .{{this}}
-        </div>
-      </div>
-      {{/each}}
-    </div>
-  </script>
-
+  <!-- JS to deal with the repetitiveness of the margin and padding classes -->
   <script>
+    function spacingTpl(variations, size, forceSpacingStyle) {
+      return `
+        <div class="d-flex justify-content-between align-items-center my-3">
+          ${variations.map((variation) => `
+            <div class="d-inline-block bg-success">
+              <div class="${variation} bg-primary" ${size === 0 ? `style="${forceSpacingStyle}"` : ''}>
+                ${variation}
+              </div>
+            </div>`
+          ).join('')}
+        </div>
+      `;
+    }
+
     const sizes = [0, 1, 2, 3, 4];
     const variations = {
       margin: ['m-', 'mt-', 'mr-', 'mb-', 'ml-', 'mx-', 'my-'],
       padding: ['p-', 'pt-', 'pr-', 'pb-', 'pl-', 'px-', 'py-'],
     };
-    let spacingWrapper = document.getElementsByClassName('spacing-wrapper')[0];
-    let spacingTpl = Handlebars.compile(document.getElementById('spacing-classes-tpl').innerHTML);
+    const spacingWrapper = document.querySelector('.spacing-wrapper');
+    const holdme = document.createElement('div');
 
     Object.keys(variations).forEach((variationType) => {
-      const forceSpacingClass = 'add-' + variationType;
+      const forceSpacingStyle = `${variationType}: 1rem;`;
 
       sizes.forEach((size) => {
-        let holdme = document.createElement('div');
         const types = variations[variationType].map((type) => type + size);
-        holdme.innerHTML = spacingTpl({variations: types, size, forceSpacingClass});
+        holdme.innerHTML = spacingTpl(types, size, forceSpacingStyle);
         spacingWrapper.appendChild(holdme.children[0]);
       });
     });
